@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let plugin;
-	export let id;
+	export let id: string;
 </script>
 
 <a href={"/plugin/" + id} class="p-5 items-center flex flex-col text-xl bg-[#31363F] rounded-3xl">
@@ -9,7 +9,7 @@
 		alt="Plugin Icon"
 		class="size-32 rounded-2xl"
 	/>
-	<p class="pt-2 pb-2 !font-semibold text-[18px] dark:text-slate-300">
+	<p class="pt-4 !font-semibold text-[18px] dark:text-slate-300">
 		{plugin.name}
 	</p>
 	<p class="text-[16px] dark:text-slate-300">
