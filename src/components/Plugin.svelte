@@ -1,0 +1,18 @@
+<script lang="ts">
+	export let plugin;
+	export let id;
+</script>
+
+<a href={"/plugin/" + id} class="p-5 items-center flex flex-col text-xl bg-[#31363F] rounded-3xl">
+	<img
+		src={"https://ninjadev64.github.io/openaction-plugins/icons/" + id + ".png"}
+		alt="Plugin Icon"
+		class="size-32 rounded-2xl"
+	/>
+	<p class="pt-2 pb-2 !font-semibold text-[18px] dark:text-slate-300">
+		{plugin.name}
+	</p>
+	<p class="text-[16px] dark:text-slate-300">
+		by {plugin.author}
+	</p>
+</a>

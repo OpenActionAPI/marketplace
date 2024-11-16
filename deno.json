@@ -1,0 +1,19 @@
+{
+	"fmt": {
+		"useTabs": true,
+		"lineWidth": 120,
+		"exclude": [
+			"node_modules/"
+		]
+	},
+	"lint": {
+		"rules": {
+			"exclude": [
+				"no-explicit-any"
+			]
+		},
+		"include": [
+			"src/"
+		]
+	}
+}

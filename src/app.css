@@ -1,0 +1,72 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.readme h1 {
+	@apply text-3xl text-white font-bold pb-1.5;
+}
+
+.readme h2 {
+	@apply text-2xl text-white font-semibold;
+}
+
+.readme h4 {
+	@apply text-white text-lg;
+}
+
+.readme h5 {
+	@apply text-sm;
+}
+
+.readme h6 {
+	@apply text-xl;
+}
+
+.readme ul {
+	@apply list-disc ml-6;
+}
+
+.readme strong {
+	@apply font-extrabold;
+}
+
+body {
+	font-family: "Lexend", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	background-color: #222831;
+}
+
+@media (min-width: 199px) {
+	.grid-container {
+		grid-template-columns: 1fr;
+	}
+}
+@media (min-width: 610px) and (max-width: 899px) {
+	.grid-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 899px) and (max-width: 1199px) {
+	.grid-container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media (min-width: 1199px) and (max-width: 1499px) {
+	.grid-container {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media (min-width: 1499px) {
+	.grid-container {
+		grid-template-columns: repeat(5, 1fr);
+	}
+}
