@@ -2,8 +2,10 @@
 	"fmt": {
 		"useTabs": true,
 		"lineWidth": 120,
+		"proseWrap": "never",
 		"exclude": [
-			"node_modules/"
+			"node_modules/",
+			".svelte-kit/"
 		]
 	},
 	"lint": {
@@ -12,8 +14,9 @@
 				"no-explicit-any"
 			]
 		},
-		"include": [
-			"src/"
+		"exclude": [
+			"node_modules/",
+			".svelte-kit/"
 		]
 	}
 }

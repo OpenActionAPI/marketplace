@@ -1,7 +1,3 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -47,6 +43,7 @@ body {
 		grid-template-columns: 1fr;
 	}
 }
+
 @media (min-width: 610px) and (max-width: 899px) {
 	.grid-container {
 		grid-template-columns: repeat(2, 1fr);
