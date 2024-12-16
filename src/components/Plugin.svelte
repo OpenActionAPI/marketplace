@@ -9,10 +9,10 @@
 		alt="Plugin Icon"
 		class="size-32 rounded-2xl"
 	/>
-	<p class="pt-4 !font-semibold text-[18px] dark:text-slate-300">
+	<p class="pt-4 !font-semibold text-[18px] text-slate-300">
 		{plugin.name}
 	</p>
-	<p class="text-[16px] dark:text-slate-300">
+	<p class="text-[16px] text-slate-300">
 		by {plugin.author}
 	</p>
 </a>
