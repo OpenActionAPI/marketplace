@@ -114,12 +114,12 @@
 					<ArrowSquareOut size={24} />
 				</button>
 
-				<div class="ml-8">
-					<p class="flex flex-row text-neutral-300">
+				{#if download_count}
+					<div class="flex flex-row text-neutral-300 ml-8">
 						<span class="mr-1 text-lg"> {download_count} </span>
 						<DownloadSimple size={28} />
-					</p>
-				</div>
+					</div>
+				{/if}
 			</div>
 		</div>
 
