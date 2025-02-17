@@ -34,6 +34,7 @@
 							src={"https://openactionapi.github.io/plugins/icons/" + id + ".png"}
 							alt={plugin.name}
 							class="size-32 rounded-2xl"
+							loading="lazy"
 						/>
 						<p class="pt-4 !font-semibold text-[18px] text-neutral-300">
 							{plugin.name}
