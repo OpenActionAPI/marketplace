@@ -36,7 +36,3 @@ body {
 	font-family: "Inter", sans-serif;
 	@apply bg-neutral-800;
 }
-
-.grid-container {
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-}
