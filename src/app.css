@@ -37,32 +37,6 @@ body {
 	@apply bg-neutral-800;
 }
 
-@media (min-width: 199px) {
-	.grid-container {
-		grid-template-columns: 1fr;
-	}
-}
-
-@media (min-width: 610px) and (max-width: 899px) {
-	.grid-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (min-width: 899px) and (max-width: 1199px) {
-	.grid-container {
-		grid-template-columns: repeat(3, 1fr);
-	}
-}
-
-@media (min-width: 1199px) and (max-width: 1499px) {
-	.grid-container {
-		grid-template-columns: repeat(4, 1fr);
-	}
-}
-
-@media (min-width: 1499px) {
-	.grid-container {
-		grid-template-columns: repeat(5, 1fr);
-	}
+.grid-container {
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
