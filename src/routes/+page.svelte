@@ -26,7 +26,7 @@
 	</div>
 
 	{#if data}
-		<div class="p-8 gap-x-4 gap-y-12 grid-container grid">
+		<div class="p-8 gap-x-4 gap-y-12 grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
 			{#each Object.entries(data) as [id, plugin]}
 				{#if plugin.name.toLowerCase().includes(searchString.toLowerCase())}
 					<a href={"/plugin/" + id} class="p-5 items-center flex flex-col text-xl bg-neutral-700 rounded-3xl">
