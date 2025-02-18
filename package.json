@@ -17,6 +17,7 @@
 		"vite": "^5.4"
 	},
 	"dependencies": {
+		"dompurify": "^3.2",
 		"marked": "^15.0",
 		"marked-base-url": "^1.1",
 		"phosphor-svelte": "^2.0"
