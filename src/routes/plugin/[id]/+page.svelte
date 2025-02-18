@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from "$app/stores";
 	import { marked } from "marked";
+	import { baseUrl } from "marked-base-url";
 	import { onMount } from "svelte";
 
 	import ArrowSquareOut from "phosphor-svelte/lib/ArrowSquareOut";
@@ -26,6 +27,7 @@
 
 	async function getReadme(repo: string): Promise<string> {
 		let response = await fetch("https://raw.githubusercontent.com/" + repo + "/master/README.md");
+		marked.use(baseUrl("https://raw.githubusercontent.com/" + repo + "/master/"));
 		return await response.text();
 	}
 

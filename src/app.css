@@ -4,35 +4,31 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	font-family: "Inter", sans-serif;
+	@apply bg-neutral-800;
+}
+
+.readme h1, .readme h2, .readme h3, .readme h4, .readme h5, .readme h6 {
+	@apply text-neutral-200;
+}
+
 .readme h1 {
-	@apply text-3xl text-neutral-200 font-bold pb-1.5;
+	@apply py-1.5 text-3xl font-bold;
 }
 
 .readme h2 {
-	@apply text-2xl text-neutral-200 font-semibold;
+	@apply py-1 text-2xl font-semibold;
 }
 
-.readme h4 {
-	@apply text-neutral-200 text-lg;
+.readme h3 {
+	@apply py-0.5 text-xl;
 }
 
-.readme h5 {
-	@apply text-sm;
-}
-
-.readme h6 {
-	@apply text-xl;
+.readme h4, .readme h5, .readme h6 {
+	@apply text-lg;
 }
 
 .readme ul {
 	@apply list-disc ml-6;
-}
-
-.readme strong {
-	@apply font-extrabold;
-}
-
-body {
-	font-family: "Inter", sans-serif;
-	@apply bg-neutral-800;
 }

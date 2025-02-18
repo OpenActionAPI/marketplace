@@ -18,6 +18,7 @@
 	},
 	"dependencies": {
 		"marked": "^15.0",
+		"marked-base-url": "^1.1",
 		"phosphor-svelte": "^2.0"
 	}
 }
