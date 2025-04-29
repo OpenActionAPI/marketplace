@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-	let data: { [id: string]: { name: string; repository: string; author: string } };
+	let data: { [id: string]: { name: string; repository: string; author: string; discription: string } };
 	let searchString = "";
 
 	onMount(async () => {
@@ -26,7 +26,7 @@
 	</div>
 
 	{#if data}
-		<div class="p-8 gap-x-4 gap-y-12 grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
+		<div class="p-8 gap-x-4 gap-y-12 grid" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); position: relative">
 			{#each Object.entries(data) as [id, plugin]}
 				{#if plugin.name.toLowerCase().includes(searchString.toLowerCase())}
 					<a href={"/plugin/" + id} class="p-5 items-center flex flex-col text-xl bg-neutral-700 rounded-3xl">
@@ -42,6 +42,11 @@
 						<p class="text-[16px] text-neutral-300">
 							by {plugin.author}
 						</p>
+						{#if plugin.description}
+							<p class="text-[16px] text-neutral-300 tooltip-desc">
+								{plugin.description}
+							</p>
+						{/if}
 					</a>
 				{/if}
 			{/each}
