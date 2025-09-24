@@ -1,6 +1,5 @@
 {
-	"name": "openactionmarketplace",
-	"version": "0.0.1",
+	"name": "marketplace",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -8,18 +7,18 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.3",
-		"@sveltejs/kit": "^2.8",
-		"@sveltejs/vite-plugin-svelte": "^4.0",
-		"autoprefixer": "^10.4",
-		"svelte": "^5.2",
-		"tailwindcss": "^3.4",
-		"vite": "^5.4"
+		"@sveltejs/adapter-auto": "^6.1",
+		"@sveltejs/kit": "^2.43",
+		"@sveltejs/vite-plugin-svelte": "^6.2",
+		"@tailwindcss/vite": "^4.1",
+		"svelte": "^5.39",
+		"tailwindcss": "^4.1",
+		"vite": "^7.1"
 	},
 	"dependencies": {
 		"dompurify": "^3.2",
-		"marked": "^15.0",
+		"marked": "^16.3",
 		"marked-base-url": "^1.1",
-		"phosphor-svelte": "^2.0"
+		"phosphor-svelte": "^3.0"
 	}
 }

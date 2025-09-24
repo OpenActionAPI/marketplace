@@ -1,8 +1,5 @@
 @import url("https://rsms.me/inter/inter.css");
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 body {
 	font-family: "Inter", sans-serif;
@@ -10,25 +7,29 @@ body {
 }
 
 .readme h1, .readme h2, .readme h3, .readme h4, .readme h5, .readme h6 {
-	@apply text-neutral-200;
+	@apply font-medium text-neutral-200;
 }
-
+.readme h1:not(:first-child), .readme h2:not(:first-child), .readme h3:not(:first-child) {
+	@apply mt-5;
+}
+.readme h1, .readme h2, .readme h3 {
+	@apply mb-3 pb-1.5 border-b border-neutral-600;
+}
 .readme h1 {
-	@apply py-1.5 text-3xl font-bold;
+	@apply text-2xl;
 }
-
 .readme h2 {
-	@apply py-1 text-2xl font-semibold;
+	@apply text-xl;
 }
-
 .readme h3 {
-	@apply py-0.5 text-xl;
-}
-
-.readme h4, .readme h5, .readme h6 {
 	@apply text-lg;
 }
-
+.readme a {
+	@apply text-blue-400 hover:underline cursor-pointer;
+}
 .readme ul {
 	@apply list-disc ml-6;
+}
+.readme img {
+	@apply my-3;
 }

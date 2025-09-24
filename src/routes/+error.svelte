@@ -2,6 +2,7 @@
 	import { page } from "$app/stores";
 </script>
 
-<div class="m-auto p-4 items-center">
-	<h1 class="font-bold text-3xl text-neutral-200">{$page.status}: {$page.error?.message}</h1>
-</div>
+<h1 class="px-6 py-4 font-semibold text-center md:text-left text-2xl text-neutral-200 bg-neutral-900">
+	<a href="/">OpenAction Marketplace</a>
+</h1>
+<h1 class="m-4 font-semibold text-center md:text-left text-2xl text-red-200">{$page.status}: {$page.error?.message}</h1>

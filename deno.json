@@ -1,22 +1,13 @@
 {
+	"exclude": [".svelte-kit/"],
 	"fmt": {
 		"useTabs": true,
 		"lineWidth": 120,
-		"proseWrap": "never",
-		"exclude": [
-			"node_modules/",
-			".svelte-kit/"
-		]
+		"proseWrap": "never"
 	},
 	"lint": {
 		"rules": {
-			"exclude": [
-				"no-explicit-any"
-			]
-		},
-		"exclude": [
-			"node_modules/",
-			".svelte-kit/"
-		]
+			"exclude": ["no-explicit-any"]
+		}
 	}
 }
