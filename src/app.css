@@ -33,3 +33,51 @@ body {
 .readme img {
 	@apply my-3;
 }
+
+.readme .octicon {
+	display: inline-block;
+	fill: currentColor;
+	vertical-align: text-bottom;
+}
+.readme .markdown-alert {
+	padding: 0 1em;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	color: inherit;
+	border-left: 0.25em solid #444c56;
+}
+.readme .markdown-alert-title {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 500;
+}
+.readme .markdown-alert-note {
+	border-left-color: #539bf5;
+}
+.readme .markdown-alert-tip {
+	border-left-color: #57ab5a;
+}
+.readme .markdown-alert-important {
+	border-left-color: #986ee2;
+}
+.readme .markdown-alert-warning {
+	border-left-color: #c69026;
+}
+.readme .markdown-alert-caution {
+	border-left-color: #e5534b;
+}
+.readme .markdown-alert-note > .markdown-alert-title {
+	color: #539bf5;
+}
+.readme .markdown-alert-tip > .markdown-alert-title {
+	color: #57ab5a;
+}
+.readme .markdown-alert-important > .markdown-alert-title {
+	color: #986ee2;
+}
+.readme .markdown-alert-warning > .markdown-alert-title {
+	color: #c69026;
+}
+.readme .markdown-alert-caution > .markdown-alert-title {
+	color: #e5534b;
+}
