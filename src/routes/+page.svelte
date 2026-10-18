@@ -1,7 +1,18 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 
-	let data: { [id: string]: { name: string; repository: string; author: string } };
+	import Robot from "phosphor-svelte/lib/Robot";
+
+	let data: {
+		[id: string]: {
+			name: string;
+			repository: string;
+			author: string;
+			flags?: {
+				ai_assisted?: boolean;
+			};
+		};
+	};
 	let searchString = "";
 
 	onMount(async () => {
@@ -40,6 +51,9 @@
 					</p>
 					<p class="text-[16px] text-neutral-300">
 						by {plugin.author}
+						{#if plugin.flags?.ai_assisted}
+							<Robot size="1em" class="inline align-text-bottom text-yellow-500" />
+						{/if}
 					</p>
 				</a>
 			{/if}

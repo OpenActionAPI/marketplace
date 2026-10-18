@@ -9,8 +9,15 @@
 
 	import ArrowSquareOut from "phosphor-svelte/lib/ArrowSquareOut";
 	import DownloadSimple from "phosphor-svelte/lib/DownloadSimple";
+	import Robot from "phosphor-svelte/lib/Robot";
 
-	type Plugin = { repository: string; name: string; author: string; download_url: string | undefined };
+	type Plugin = {
+		repository: string;
+		name: string;
+		author: string;
+		download_url: string | undefined;
+		flags?: { ai_assisted?: boolean };
+	};
 
 	let pluginDetails: Plugin | 0;
 	let readme = "<strong>Loading plugin details...</strong>";
@@ -121,8 +128,14 @@
 							href={"https://github.com/" + pluginDetails.repository.split("/")[3]}
 							class="underline"
 						>
-							{pluginDetails.repository.split("/")[3]}
+							{pluginDetails.author}
+							{#if pluginDetails.repository.split("/")[3] != pluginDetails.author}
+								({pluginDetails.repository.split("/")[3]})
+							{/if}
 						</a>
+						{#if pluginDetails.flags?.ai_assisted}
+							<Robot size="20" class="ml-1.5 text-yellow-500" />
+						{/if}
 					</div>
 				</div>
 			</div>
